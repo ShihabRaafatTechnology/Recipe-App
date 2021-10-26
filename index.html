@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <!-- Defend From XSS Attack -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.3.3/purify.min.js"></script>
+
+    <!-- Style App -->
+    <link rel="stylesheet" href="css/main.css">
+    
+    <!-- Script App -->
+    <script defer src="js/main.js"></script>
+    <title>Recipe App</title>
+  </head>
+  <body>
+
+    <!-- Start Input Recipe -->
+    <section class="recipe">
+      <div class="container">
+        <div class="row m-4 text-center">
+          <h1 class="display-4">Recipe App</h1>
+          <p class="text-muted fs-5">Add Custom Recipe For Your Home</p>
+        </div>
+        <form id="recipe-form" class="p-4 m-4 row border-form">
+          <div class="form-group col-12 col-md-4 my-3">
+            <label for="name">Name Of Recipe</label>
+            <input type="text" id="name" required autocomplete="off" class="form-control" placeholder="e.g. Customer Name">
+          </div>
+          <div class="form-group col-12 col-md-4 my-3">
+            <label for="order">Order</label>
+            <input type="text" id="order" required autocomplete="off" class="form-control" placeholder="e.g. Orange, Apple">
+          </div>
+          <div class="form-group col-12 col-md-4 my-3">
+            <label for="price">Total Price</label>
+            <input type="text" id="price" required autocomplete="off" class="form-control" placeholder="e.g. $125.30">
+          </div>
+          <div class="form-group col-12 col-md-4 my-3">
+            <label for="quantity">Quantity</label>
+            <input type="text" id="quantity" required autocomplete="off" class="form-control" placeholder="e.g. 2kg Orange, 0.5kg Apple">
+          </div>
+          <div class="form-group col-12 col-md-4 my-3">
+            <label for="location">Location</label>
+            <input type="text" id="location" required autocomplete="off" class="form-control" placeholder="e.g. El-Shorouk City">
+          </div>
+          <div class="form-group col-12 col-md-4 my-3">
+            <label for="note">Notes</label>
+            <input type="text" id="note" required autocomplete="off" class="form-control" placeholder="e.g. The Order Arrived At 2:30 PM">
+          </div>
+          <div class="row">
+            <div class="text-center">
+               <input type="submit" value="Add Recipe" class="btn">
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- End Input Recipe -->
+
+    <!-- Start Save Recipes -->
+    <section class="save-recipes">
+      <div class="container">
+        <div class="row m-4 title">
+            <h1>Save Recipes</h1>
+        </div>
+        <div class="row g-4" id="save-recipes">
+
+        </div>
+      </div>
+    </section>
+    <!-- End Save Recipes -->
+
+    
+  </body>
+</html>

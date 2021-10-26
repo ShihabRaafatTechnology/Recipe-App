@@ -1,0 +1,6 @@
+body{background-color: #14213d}
+h1,label{color: #e5e5e5}
+.bg-head{background-color: #003049;}
+.title{border-bottom: 3px solid #fca311;}
+.border-form{border: 2px solid #fca311}
+input[type="submit"]{background-color: #fca311; color: #14213d;}
